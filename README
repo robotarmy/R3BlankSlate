@@ -3,9 +3,9 @@
 
 % gem install rails --pre
 
-% rails APP
+% rails R3BlankSlate
 
-% cd APP
+% cd R3BlankSlate
 
 % edit Gemfile
 # Edit this Gemfile to bundle your application's dependencies.
@@ -36,4 +36,10 @@ end
       g.fixture_replacement :factory_girl, :dir => "spec/factories"
     end
 % bundle install && bundle pack
+
+% ./script/rails g   rspec:install
+
+% ./script/rails g  cucumber:skeleton
+
+% ~/.bundle/ruby/1.8/bin/haml --rails .
 
